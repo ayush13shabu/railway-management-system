@@ -20,13 +20,13 @@ echo "
 while ($cdrow=mysqli_fetch_array($cdresult)) 
 {
 	echo "
-<tr><td>".$cdrow['trainno']."</td><td>".$cdrow['tname']."</td><td>".$cdrow['sp']."</td><td>".$cdrow['st']."</td><td>".$cdrow['dp']."</td><td>".$cdrow['dt']."</td><td>".$cdrow['dd']."</td><td>".$cdrow['distance']."</td><td><a href=\"http://localhost/railway/schedule.php?trainno=".$cdrow['trainno']."\"><button>Schedule</button></a></td></tr>
+<tr><td>".$cdrow['trainno']."</td><td>".$cdrow['tname']."</td><td>".$cdrow['sp']."</td><td>".$cdrow['st']."</td><td>".$cdrow['dp']."</td><td>".$cdrow['dt']."</td><td>".$cdrow['dd']."</td><td>".$cdrow['distance']."</td><td><a href=\"/railway/schedule.php?trainno=".$cdrow['trainno']."\"><button>Schedule</button></a></td></tr>
 ";
 }
 echo "</table>";
 
-echo " <br><a href=\"http://localhost/railway/insert_into_train_3.php\"> Add New Train </a><br> ";
-echo " <br><a href=\"http://localhost/railway/admin_login.php\">Go Back to Admin Menu!!!</a> ";
+echo " <br><a href=\"/railway/insert_into_train_3.php\"> Add New Train </a><br> ";
+echo " <br><a href=\"/railway/admin_login.php\">Go Back to Admin Menu!!!</a> ";
 ?>
 </body>
 </html>

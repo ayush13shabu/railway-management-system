@@ -49,7 +49,7 @@ for($i=0;$i<$_SESSION["nos"];$i++)
 if($temp==0)
 {
  echo "<br><br>Atleast one adult must accompany!!!";
- echo "<br><br><a href=\"http://localhost/railway/enquiry.php\">Back to Enquiry</a> <br>";
+ echo "<br><br><a href=\"/railway/enquiry.php\">Back to Enquiry</a> <br>";
  die();
 }
 
@@ -103,7 +103,7 @@ else
 //echo "Enter Passanger Gender: <input type='text' name='pgender[]' required> <br> ";
 }
 
-echo "<br><br><a href=\"http://localhost/railway/index.htm\">Go Back!!!</a> <br>";
+echo "<br><br><a href=\"/railway/index.htm\">Go Back!!!</a> <br>";
 
 $conn->close(); 
 ?>

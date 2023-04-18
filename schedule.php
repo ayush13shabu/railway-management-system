@@ -53,14 +53,14 @@ $temp=0;
 while ($temp<$i-1) 
 {
 	echo "
-<tr><td>".($temp+1)."</td><td>".$stations[$temp]."</td><td>".$departure[$temp]."</td><td>".$stations[$temp+1]."</td><td>".$arrival[$temp+1]."</td><td>".($distance[$temp+1]-$distance[$temp])."</td><td><a href=\"http://localhost/railway/seat_plan.php?trainno=".$_GET["trainno"]."&sp=".$stations[$temp]."&dp=".$stations[$temp+1]."\"><button>Seat Plan</button></a></td></tr>
+<tr><td>".($temp+1)."</td><td>".$stations[$temp]."</td><td>".$departure[$temp]."</td><td>".$stations[$temp+1]."</td><td>".$arrival[$temp+1]."</td><td>".($distance[$temp+1]-$distance[$temp])."</td><td><a href=\"/railway/seat_plan.php?trainno=".$_GET["trainno"]."&sp=".$stations[$temp]."&dp=".$stations[$temp+1]."\"><button>Seat Plan</button></a></td></tr>
 ";
 $temp+=1;
 }
 echo "</table>";
 
-echo " <br><a href=\"http://localhost/railway/show_trains.php\">Go Back to Train Menu!!!</a><br> ";
-echo " <br><a href=\"http://localhost/railway/admin_login.php\">Go Back to Admin Menu!!!</a> ";
+echo " <br><a href=\"/railway/show_trains.php\">Go Back to Train Menu!!!</a><br> ";
+echo " <br><a href=\"/railway/admin_login.php\">Go Back to Admin Menu!!!</a> ";
 ?>
 </body>
 </html>

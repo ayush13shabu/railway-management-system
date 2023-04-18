@@ -27,7 +27,7 @@ else
  echo "<br><br>Error:" . $conn->error;
 }
 
-echo " <br><br><a href=\"http://localhost/railway/index.htm\">Home Page</a><br>";
+echo " <br><br><a href=\"/railway/index.htm\">Home Page</a><br>";
 
 $conn->close(); 
 ?>
